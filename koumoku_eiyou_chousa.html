@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>栄養素等摂取量｜健康日本21(第二次)分析評価事業｜国立健康・栄養研究所</title>
+  <meta name="description" content="説明">
+
+  <meta property="og:title" content="健康日本21(第二次)分析評価事業｜国立健康・栄養研究所">
+  <meta property="og:description" content="説明">
+  <meta property="og:image" content="画像のURL">
+  <meta property="og:url" content="ページのURL">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://www.nibiohn.go.jp/eiken/">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+  <!--Header Section-->
+  <header>
+    <div class="header_menu">
+      <div class="outerBox">
+        <h1 class="logo"><a href=""><img src="img/logo.svg" alt="国立健康・栄養研究所　健康日本21(第二次)分析評価事業"></a></h1>
+        <div class="hamburger_button">
+          <span class="hamburger_button_bar"></span>
+          <span class="hamburger_button_bar"></span>
+          <span class="hamburger_button_bar"></span>
+          <span class="hamburger_button_text">メニュー</span>
+        </div>
+        <div class="hamburger_menu">
+          <div class="hamburger_wrapper">
+            <div class="tool_menu">
+              <ul>
+                <li><a href="#mainContent" class="skip"><img src="img/icon_skip.svg" alt="">本文へ</a></li>
+                <li><a href=""><img src="img/icon_english.svg" alt="">English</a></li>
+                <li><a href=""><img src="img/icon_contact.svg" alt="">お問い合わせ</a></li>
+                <li class="googleSearch">
+                  <script async src="https://cse.google.com/cse.js?cx=83916a6054f7e456e">
+                  </script>
+                  <img src="img/icon_search.svg" alt="">
+                  <div class="gcse-search"></div>
+                </li>
+              </ul>
+            </div>
+
+            <nav aria-label="グローバルナビゲーション" class="groval_navi">
+              <ul>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">健康日本21(第二次)</a>
+                  <ul class="groval_navi_child">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_kenkounippon21.png"
+                          alt="">健康日本21(第二次)</a>
+                    </li>
+                    <li><a href="#">健康日本21(第二次)とは</a></li>
+                    <li><a href="#">目標項目一覧</a></li>
+                    <li><a href="#">現状値の年次推移</a></li>
+                    <li><a href="#">中間評価</a></li>
+                    <li><a href="#">最終評価</a></li>
+                    <li><a href="#">健康日本21(第二次)に関連する情報</a></li>
+                  </ul>
+                </li>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">都道府県健康増進計画</a>
+                  <ul class="groval_navi_child">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_zoushinkeikaku.png"
+                          alt="">都道府県健康増進計画</a>
+                    </li>
+                    <li><a href="#">都道府県健康増進計画とは</a></li>
+                    <li><a href="#">都道府県別の計画内容</a></li>
+                    <li><a href="#">各自治体の取組事例</a></li>
+                    <li><a href="#">各都道府県の目標項目数</a></li>
+                    <li><a href="#">各都道府県で健康日本21(第二次)と同様の内容で設定されている目標項目数</a></li>
+                    <li><a href="#">各都道府県で独自に設置している目標項目数</a></li>
+                    <li><a href="#">都道府県ごとの目標項目の改善率</a></li>
+                  </ul>
+                </li>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">国民健康・栄養調査</a>
+                  <ul class="groval_navi_child">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_eiyouchousa.png" alt="">国民健康・栄養調査</a>
+                    </li>
+                    <li><a href="">調査内容の変遷</a></li>
+                    <li><a href="./eiyouchousa/index.html#keinen">主な健康指標の経年変化</a></li>
+                    <li><a href="./eiyouchousa/kekka_todoufuken_h28.html">都道府県別結果</a></li>
+                    <li><a href="./eiyouchousa/index.html#kekka">国民健康・栄養調査結果</a></li>
+                    <li><a href="./eiyouchousa/ronbun_eiyou_chousa.html">研究論文</a></li>
+                  </ul>
+                </li>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">諸外国の栄養調査</a>
+                  <ul class="groval_navi_child ">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_foreign.png" alt="">諸外国の栄養調査</a></li>
+                    <li><a href="#">栄養調査</a></li>
+                    <li><a href="#">食事摂取基準</a></li>
+                    <li><a href="#">食生活指針とフードガイド</a></li>
+                  </ul>
+                </li>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">その他の資料</a>
+                  <ul class="groval_navi_child">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_other.png" alt="">その他の資料</a></li>
+                    <li><a href="#">食事</a></li>
+                    <li><a href="#">栄養素等</a></li>
+                    <li><a href="#">健康</a></li>
+                    <li><a href="#">食環境等</a></li>
+                  </ul>
+                </li>
+                <li class="groval_navi_accordion">
+                  <a href="" aria-haspopup="true" aria-expanded="false" class="groval_navi_parent">当事業について</a>
+                  <ul class="groval_navi_child">
+                    <li class="groval_navi_title"><a href=""><img src="img/icon_about.png" alt="">当事業について</a></li>
+                    <li><a href="">目的</a></li>
+                    <li><a href="">事業内容</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--breadcrumb List-->
+  <ul class="breadcrumb">
+    <li><a href="index.html">トップ</a></li>
+    <li><a href="index.html">国民健康・栄養調査</a></li>
+    <li><a href="index.html">調査内容の変遷</a></li>
+    <li><a href="index.html">栄養摂取状況調査</a></li>
+    <li>栄養素等摂取量</li>
+  </ul>
+  <!--Main Section-->
+  <div class="outerBox">
+    <div class="containerBox">
+      <div class="mainLayout">
+
+        <!--Main Contents-->
+        <main id="mainContent">
+          <h2 class="main_h2">栄養素等摂取量</h2>
+          <p>昭和21年から現在までの調査結果を閲覧できます。</p>
+          <p><small>複数の年代のデータをまとめてダウンロードするには、左のチェックボックスにチェックを入れてください。</small></p>
+
+          <figure class="download_figure">
+            <table class="table download_table">
+              <thead>
+                <tr>
+                  <th class="age" scope="col">年代</th>
+                  <th scope="col">エネルギー(熱量)</th>
+                  <th scope="col">たんぱく質</th>
+                  <th scope="col">動物性たんぱく質</th>
+                  <th scope="col">植物性たんぱく質</th>
+                  <th scope="col">脂質(脂肪)</th>
+                  <th scope="col">動物性脂質</th>
+                  <th scope="col">飽和脂肪酸</th>
+                  <th scope="col">一価不飽和脂肪酸</th>
+                  <th scope="col">n-6系脂肪酸</th>
+                  <th scope="col">n-3系脂肪酸</th>
+                  <th scope="col">コレステロール</th>
+                  <th scope="col">炭水化物 (含水炭素)</th>
+                  <th scope="col">食物繊維</th>
+                  <th scope="col">ビタミンA</th>
+                  <th scope="col">ビタミンD</th>
+                  <th scope="col">ビタミンE</th>
+                  <th scope="col">ビタミンK</th>
+                  <th scope="col">ビタミンB1</th>
+                  <th scope="col">ビタミンB2</th>
+                  <th scope="col">ナイアシン(ナイアシン当量)</th>
+                  <th scope="col">ビタミンB6</th>
+                  <th scope="col">ビタミンB12</th>
+                  <th scope="col">葉酸</th>
+                  <th scope="col">パントテン酸</th>
+                  <th scope="col">ビタミンC</th>
+                  <th scope="col">ナトリウム</th>
+                  <th scope="col">食塩相当量</th>
+                  <th scope="col">カリウム</th>
+                  <th scope="col">カルシウム</th>
+                  <th scope="col">マグネシウム</th>
+                  <th scope="col">リン</th>
+                  <th scope="col">鉄</th>
+                  <th scope="col">亜鉛</th>
+                  <th scope="col">銅</th>
+                  <th scope="col">脂肪エネルギー比率</th>
+                  <th scope="col">穀類エネルギー比率 (穀類カロリー比)</th>
+                  <th scope="col">炭水化物エネルギー比率</th>
+                  <th scope="col">動物性たんぱく質比率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 各行の前にチェックボックスを追加 -->
+                <tr>
+                  <th scope="row">
+                    <input type="checkbox" class="file-checkbox" data-file="2019.xlsx">2019年(令和元年)
+                    <a href="2019.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル" class="download_icon"
+                        title="2019年の栄養素等摂取量をダウンロード"></a>
+                  </th>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <input type="checkbox" class="file-checkbox" data-file="2018.xlsx">2018年(令和30年)
+                    <a href="2018.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル" class="download_icon"
+                        title="2018年の栄養素等摂取量をダウンロード"></a>
+                  </th>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+
+
+
+              </tbody>
+            </table>
+            <figcaption>
+              <ul class="figcaption">
+                <li>動物性脂質(昭和40年～49年)は昭和50年の報告書に年次推移として掲載された情報です。</li>
+                <li>食塩相当量(昭和47年～昭和54年)昭和55年の報告書に年次推移として掲載された情報です。</li>
+              </ul>
+            </figcaption>
+          </figure>
+          <div class="download_filter">
+            <h3 class="download_filter_h3">絞り込み</h3>
+            <p>選択した項目が実施された年代が表示されます。</p>
+
+            <label><input type="checkbox" data-column="1">エネルギー(熱量) </label>
+            <label><input type="checkbox" data-column="2">たんぱく質 </label>
+            <label><input type="checkbox" data-column="3">動物性たんぱく質 </label>
+            <label><input type="checkbox" data-column="4">植物性たんぱく質 </label>
+            <label><input type="checkbox" data-column="5">脂質(脂肪) </label>
+            <label><input type="checkbox" data-column="6">動物性脂質 </label>
+            <label><input type="checkbox" data-column="7">飽和脂肪酸 </label>
+            <label><input type="checkbox" data-column="8">一価不飽和脂肪酸 </label>
+            <label><input type="checkbox" data-column="9">n-6系脂肪酸 </label>
+            <label><input type="checkbox" data-column="10">n-3系脂肪酸 </label>
+            <label><input type="checkbox" data-column="11">コレステロール </label>
+            <label><input type="checkbox" data-column="12">炭水化物 (含水炭素) </label>
+            <label><input type="checkbox" data-column="13">食物繊維 </label>
+            <label><input type="checkbox" data-column="14">ビタミンA </label>
+            <label><input type="checkbox" data-column="15">ビタミンD </label>
+            <label><input type="checkbox" data-column="16">ビタミンE </label>
+            <label><input type="checkbox" data-column="17">ビタミンK </label>
+            <label><input type="checkbox" data-column="18">ビタミンB1 </label>
+            <label><input type="checkbox" data-column="19">ビタミンB2 </label>
+            <label><input type="checkbox" data-column="20">ナイアシン (ナイアシン当量) </label>
+            <label><input type="checkbox" data-column="21">ビタミンB6 </label>
+            <label><input type="checkbox" data-column="22">ビタミンB12 </label>
+            <label><input type="checkbox" data-column="23">葉酸 </label>
+            <label><input type="checkbox" data-column="24">パントテン酸 </label>
+            <label><input type="checkbox" data-column="25">ビタミンC </label>
+            <label><input type="checkbox" data-column="26">ナトリウム </label>
+            <label><input type="checkbox" data-column="27">食塩相当量 </label>
+            <label><input type="checkbox" data-column="28">カリウム </label>
+            <label><input type="checkbox" data-column="29">カルシウム </label>
+            <label><input type="checkbox" data-column="30">マグネシウム </label>
+            <label><input type="checkbox" data-column="31">リン </label>
+            <label><input type="checkbox" data-column="32">鉄 </label>
+            <label><input type="checkbox" data-column="33">亜鉛 </label>
+            <label><input type="checkbox" data-column="34">銅 </label>
+            <label><input type="checkbox" data-column="35">脂肪エネルギー比率 </label>
+            <label><input type="checkbox" data-column="36">穀類エネルギー比率 (穀類カロリー比) </label>
+            <label><input type="checkbox" data-column="37">炭水化物エネルギー比率 </label>
+            <label><input type="checkbox" data-column="38">動物性たんぱく質比率 </label>
+            <div class="btn_area">
+              <!-- <button id="selectAllVisibility">全選択 (表示)</button> -->
+              <button id="deselectAllVisibility">絞り込み解除 (全表示)</button>
+            </div>
+          </div>
+
+          <div class="download_all">
+            <h2>選択ダウンロード機能</h2>
+            <p>
+              <b>選択した年代のファイルをZIPで圧縮してダウンロードします。</b>
+            </p>
+            <button id="downloadZip">選択した年代をダウンロード</button>
+            <button id="selectAllFiles">全選択 (ダウンロード)</button>
+            <button id="deselectAllFiles">全解除 (ダウンロード)</button>
+
+          </div>
+
+
+
+
+        </main>
+
+        <!--Local Navi-->
+        <nav class="local_navi" aria-label="ローカルナビゲーション">
+          <ul>
+            <li class="local_navi_title"><a href="">国民健康・栄養調査</a></li>
+            <li><a href="" class="local_navi_parent">調査内容の変遷</a>
+              <ul class="local_navi_child">
+                <li><a href="" class="current">栄養摂取状況調査</a></li>
+                <li><a href="">身体状況調査</a></li>
+                <li><a href="">生活習慣調査</a></li>
+              </ul>
+            </li>
+            <li><a href="./eiyouchousa/index.html#keinen" class="local_navi_parent">主な健康指標の経年変化</a>
+              <ul class="local_navi_child">
+                <li><a href="">栄養摂取状況調査</a></li>
+                <li><a href="">身体状況調査</a></li>
+                <li><a href="">生活習慣調査</a></li>
+              </ul>
+            </li>
+            <li><a href="./eiyouchousa/kekka_todoufuken_h28.html" class="local_navi_parent">都道府県別結果</a>
+              <ul class="local_navi_child">
+                <li><a href="">平成28年 国民健康・栄養調査結果について</a></li>
+                <li><a href="">平成24年 国民健康・栄養調査結果について</a></li>
+              </ul>
+            </li>
+            <li><a href="./eiyouchousa/index.html#kekka" class="local_navi_parent">国民健康・栄養調査結果</a>
+              <ul class="local_navi_child">
+                <li><a href="">栄養摂取状況調査</a></li>
+                <li><a href="">身体状況調査</a></li>
+                <li><a href="">生活習慣調査</a></li>
+              </ul>
+            </li>
+            <li><a href="./eiyouchousa/ronbun_eiyou_chousa.html" class="local_navi_parent">研究論文</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Footer Section-->
+  <footer>
+    <div class="footer">
+      <div class="outerBox">
+        <div class="footer_title">
+          <div class="eiken">国立研究開発法人医薬基盤・健康・研究所｜国立健康・栄養研究所</div>
+          <div class="site_name">健康日本21(第二次)分析評価事業</div>
+        </div>
+        <div class="footer_link">
+          <a href=""><img src="img/eiken.svg" alt="国立研究開発法人医薬基盤・健康・研究所 国立健康・栄養研究所"></a>
+        </div>
+        <div class="copyright">© All Right reserved National Institute of Health and Nutrition</div>
+      </div>
+    </div>
+  </footer>
+  <script src="download.js"></script>
+</body>
+
+</html>
