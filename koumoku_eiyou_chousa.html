@@ -144,220 +144,308 @@
         <main id="mainContent">
           <h2 class="main_h2">栄養素等摂取量</h2>
           <p>昭和21年から現在までの調査結果を閲覧できます。</p>
-          <p><small>複数の年代のデータをまとめてダウンロードするには、左のチェックボックスにチェックを入れてください。</small></p>
 
-          <figure class="download_figure">
-            <table class="table download_table">
-              <thead>
-                <tr>
-                  <th class="age" scope="col">年代</th>
-                  <th scope="col">エネルギー(熱量)</th>
-                  <th scope="col">たんぱく質</th>
-                  <th scope="col">動物性たんぱく質</th>
-                  <th scope="col">植物性たんぱく質</th>
-                  <th scope="col">脂質(脂肪)</th>
-                  <th scope="col">動物性脂質</th>
-                  <th scope="col">飽和脂肪酸</th>
-                  <th scope="col">一価不飽和脂肪酸</th>
-                  <th scope="col">n-6系脂肪酸</th>
-                  <th scope="col">n-3系脂肪酸</th>
-                  <th scope="col">コレステロール</th>
-                  <th scope="col">炭水化物 (含水炭素)</th>
-                  <th scope="col">食物繊維</th>
-                  <th scope="col">ビタミンA</th>
-                  <th scope="col">ビタミンD</th>
-                  <th scope="col">ビタミンE</th>
-                  <th scope="col">ビタミンK</th>
-                  <th scope="col">ビタミンB1</th>
-                  <th scope="col">ビタミンB2</th>
-                  <th scope="col">ナイアシン(ナイアシン当量)</th>
-                  <th scope="col">ビタミンB6</th>
-                  <th scope="col">ビタミンB12</th>
-                  <th scope="col">葉酸</th>
-                  <th scope="col">パントテン酸</th>
-                  <th scope="col">ビタミンC</th>
-                  <th scope="col">ナトリウム</th>
-                  <th scope="col">食塩相当量</th>
-                  <th scope="col">カリウム</th>
-                  <th scope="col">カルシウム</th>
-                  <th scope="col">マグネシウム</th>
-                  <th scope="col">リン</th>
-                  <th scope="col">鉄</th>
-                  <th scope="col">亜鉛</th>
-                  <th scope="col">銅</th>
-                  <th scope="col">脂肪エネルギー比率</th>
-                  <th scope="col">穀類エネルギー比率 (穀類カロリー比)</th>
-                  <th scope="col">炭水化物エネルギー比率</th>
-                  <th scope="col">動物性たんぱく質比率</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- 各行の前にチェックボックスを追加 -->
-                <tr>
-                  <th scope="row">
-                    <input type="checkbox" class="file-checkbox" data-file="2019.xlsx">2019年(令和元年)
-                    <a href="2019.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル" class="download_icon"
-                        title="2019年の栄養素等摂取量をダウンロード"></a>
-                  </th>
-                  <td>●</td>
-                  <td></td>
-                  <td>●</td>
-                  <td></td>
-                  <td>●</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <input type="checkbox" class="file-checkbox" data-file="2018.xlsx">2018年(令和30年)
-                    <a href="2018.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル" class="download_icon"
-                        title="2018年の栄養素等摂取量をダウンロード"></a>
-                  </th>
-                  <td>●</td>
-                  <td></td>
-                  <td>●</td>
-                  <td></td>
-                  <td>●</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-
-
-
-              </tbody>
-            </table>
-            <figcaption>
-              <ul class="figcaption">
-                <li>動物性脂質(昭和40年～49年)は昭和50年の報告書に年次推移として掲載された情報です。</li>
-                <li>食塩相当量(昭和47年～昭和54年)昭和55年の報告書に年次推移として掲載された情報です。</li>
-              </ul>
-            </figcaption>
-          </figure>
           <div class="download_filter">
-            <h3 class="download_filter_h3">絞り込み</h3>
-            <p>選択した項目が実施された年代が表示されます。</p>
-
-            <label><input type="checkbox" data-column="1">エネルギー(熱量) </label>
-            <label><input type="checkbox" data-column="2">たんぱく質 </label>
-            <label><input type="checkbox" data-column="3">動物性たんぱく質 </label>
-            <label><input type="checkbox" data-column="4">植物性たんぱく質 </label>
-            <label><input type="checkbox" data-column="5">脂質(脂肪) </label>
-            <label><input type="checkbox" data-column="6">動物性脂質 </label>
-            <label><input type="checkbox" data-column="7">飽和脂肪酸 </label>
-            <label><input type="checkbox" data-column="8">一価不飽和脂肪酸 </label>
-            <label><input type="checkbox" data-column="9">n-6系脂肪酸 </label>
-            <label><input type="checkbox" data-column="10">n-3系脂肪酸 </label>
-            <label><input type="checkbox" data-column="11">コレステロール </label>
-            <label><input type="checkbox" data-column="12">炭水化物 (含水炭素) </label>
-            <label><input type="checkbox" data-column="13">食物繊維 </label>
-            <label><input type="checkbox" data-column="14">ビタミンA </label>
-            <label><input type="checkbox" data-column="15">ビタミンD </label>
-            <label><input type="checkbox" data-column="16">ビタミンE </label>
-            <label><input type="checkbox" data-column="17">ビタミンK </label>
-            <label><input type="checkbox" data-column="18">ビタミンB1 </label>
-            <label><input type="checkbox" data-column="19">ビタミンB2 </label>
-            <label><input type="checkbox" data-column="20">ナイアシン (ナイアシン当量) </label>
-            <label><input type="checkbox" data-column="21">ビタミンB6 </label>
-            <label><input type="checkbox" data-column="22">ビタミンB12 </label>
-            <label><input type="checkbox" data-column="23">葉酸 </label>
-            <label><input type="checkbox" data-column="24">パントテン酸 </label>
-            <label><input type="checkbox" data-column="25">ビタミンC </label>
-            <label><input type="checkbox" data-column="26">ナトリウム </label>
-            <label><input type="checkbox" data-column="27">食塩相当量 </label>
-            <label><input type="checkbox" data-column="28">カリウム </label>
-            <label><input type="checkbox" data-column="29">カルシウム </label>
-            <label><input type="checkbox" data-column="30">マグネシウム </label>
-            <label><input type="checkbox" data-column="31">リン </label>
-            <label><input type="checkbox" data-column="32">鉄 </label>
-            <label><input type="checkbox" data-column="33">亜鉛 </label>
-            <label><input type="checkbox" data-column="34">銅 </label>
-            <label><input type="checkbox" data-column="35">脂肪エネルギー比率 </label>
-            <label><input type="checkbox" data-column="36">穀類エネルギー比率 (穀類カロリー比) </label>
-            <label><input type="checkbox" data-column="37">炭水化物エネルギー比率 </label>
-            <label><input type="checkbox" data-column="38">動物性たんぱく質比率 </label>
-            <div class="btn_area">
+            <a tabindex="1" class="download_h3 accordion_parent">調査結果の絞り込み</a>
+            <div class="accordion">
+              <p><small>選択した項目の調査が実施された年代のみを表示します。</small></p>
+              <div class="filter_table">
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="1">エネルギー(熱量) </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="2">たんぱく質 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="3">動物性たんぱく質 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="4">植物性たんぱく質 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="5">脂質(脂肪) </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="6">動物性脂質 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="7">飽和脂肪酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="8">一価不飽和脂肪酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="9">n-6系脂肪酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="10">n-3系脂肪酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="11">コレステロール </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="12">炭水化物 (含水炭素) </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="13">食物繊維 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="14">ビタミンA </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="15">ビタミンD </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="16">ビタミンE </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="17">ビタミンK </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="18">ビタミンB1 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="19">ビタミンB2 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="20">ナイアシン (ナイアシン当量) </label>
+                </div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="21">ビタミンB6 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="22">ビタミンB12 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="23">葉酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="24">パントテン酸 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="25">ビタミンC </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="26">ナトリウム </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="27">食塩相当量 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="28">カリウム </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="29">カルシウム </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="30">マグネシウム </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="31">リン </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="32">鉄 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="33">亜鉛 </label></div>
+                <div class="filter_checkbox"><label><input type="checkbox" data-column="34">銅 </label>
+                  <div class="filter_checkbox"><label><input type="checkbox" data-column="35">脂肪エネルギー比率 </label></div>
+                  <div class="filter_checkbox"><label><input type="checkbox" data-column="36">穀類エネルギー比率 (穀類カロリー比)
+                    </label>
+                  </div>
+                  <div class="filter_checkbox"><label><input type="checkbox" data-column="37">炭水化物エネルギー比率 </label></div>
+                  <div class="filter_checkbox"><label><input type="checkbox" data-column="38">動物性たんぱく質比率 </label></div>
+                </div>
+              </div>
               <!-- <button id="selectAllVisibility">全選択 (表示)</button> -->
-              <button id="deselectAllVisibility">絞り込み解除 (全表示)</button>
+              <button id="deselectAllVisibility" class="filter_btn">絞り込み解除 (全表示)</button>
             </div>
           </div>
 
           <div class="download_all">
-            <h2>選択ダウンロード機能</h2>
-            <p>
-              <b>選択した年代のファイルをZIPで圧縮してダウンロードします。</b>
-            </p>
-            <button id="downloadZip">選択した年代をダウンロード</button>
-            <button id="selectAllFiles">全選択 (ダウンロード)</button>
-            <button id="deselectAllFiles">全解除 (ダウンロード)</button>
-
+            <p>複数年のデータをまとめてZIPで圧縮してダウンロードするには、各年代のチェックボックスにチェックを入れて選択してください。</p>
+            <button id="downloadZip" class="filter_btn">選択した年代をダウンロード</button>
+            <button id="selectAllFiles" class="filter_btn">全選択 (ダウンロード)</button>
+            <button id="deselectAllFiles" class="filter_btn">全解除 (ダウンロード)</button>
           </div>
+          
+            <figure class="download_figure">
+              <table class="table download_table">
+                <thead>
+                  <tr>
+                    <th class="age" scope="col">年代<p><small>ダウンロードアイコンをクリックすると個別にダウンロードできます。</small></p>
+                    </th>
+                    <th scope="col">エネルギー(熱量)</th>
+                    <th scope="col">たんぱく質</th>
+                    <th scope="col">動物性たんぱく質</th>
+                    <th scope="col">植物性たんぱく質</th>
+                    <th scope="col">脂質(脂肪)</th>
+                    <th scope="col">動物性脂質</th>
+                    <th scope="col">飽和脂肪酸</th>
+                    <th scope="col">一価不飽和脂肪酸</th>
+                    <th scope="col">n-6系脂肪酸</th>
+                    <th scope="col">n-3系脂肪酸</th>
+                    <th scope="col">コレステロール</th>
+                    <th scope="col">炭水化物 (含水炭素)</th>
+                    <th scope="col">食物繊維</th>
+                    <th scope="col">ビタミンA</th>
+                    <th scope="col">ビタミンD</th>
+                    <th scope="col">ビタミンE</th>
+                    <th scope="col">ビタミンK</th>
+                    <th scope="col">ビタミンB1</th>
+                    <th scope="col">ビタミンB2</th>
+                    <th scope="col">ナイアシン(ナイアシン当量)</th>
+                    <th scope="col">ビタミンB6</th>
+                    <th scope="col">ビタミンB12</th>
+                    <th scope="col">葉酸</th>
+                    <th scope="col">パントテン酸</th>
+                    <th scope="col">ビタミンC</th>
+                    <th scope="col">ナトリウム</th>
+                    <th scope="col">食塩相当量</th>
+                    <th scope="col">カリウム</th>
+                    <th scope="col">カルシウム</th>
+                    <th scope="col">マグネシウム</th>
+                    <th scope="col">リン</th>
+                    <th scope="col">鉄</th>
+                    <th scope="col">亜鉛</th>
+                    <th scope="col">銅</th>
+                    <th scope="col">脂肪エネルギー比率</th>
+                    <th scope="col">穀類エネルギー比率 (穀類カロリー比)</th>
+                    <th scope="col">炭水化物エネルギー比率</th>
+                    <th scope="col">動物性たんぱく質比率</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 各行の前にチェックボックスを追加 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" class="file-checkbox" data-file="2019.xlsx">2019年(令和元年)
+                      <a href="2019.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル"
+                          class="download_icon" title="2019年の栄養素等摂取量をダウンロード"></a>
+                    </th>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" class="file-checkbox" data-file="2018.xlsx">2018年(令和30年)
+                      <a href="2018.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル"
+                          class="download_icon" title="2018年の栄養素等摂取量をダウンロード"></a>
+                    </th>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" class="file-checkbox" data-file="2018.xlsx">2018年(令和30年)
+                      <a href="2018.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル"
+                          class="download_icon" title="2018年の栄養素等摂取量をダウンロード"></a>
+                    </th>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" class="file-checkbox" data-file="2018.xlsx">2018年(令和30年)
+                      <a href="2018.xlsx" download><img src="img/icon_download.svg" alt="Excelファイル"
+                          class="download_icon" title="2018年の栄養素等摂取量をダウンロード"></a>
+                    </th>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
 
 
 
 
+                </tbody>
+              </table>
+              <figcaption>
+                <ul class="figcaption">
+                  <li>動物性脂質(昭和40年～49年)は昭和50年の報告書に年次推移として掲載された情報です。</li>
+                  <li>食塩相当量(昭和47年～昭和54年)昭和55年の報告書に年次推移として掲載された情報です。</li>
+                </ul>
+              </figcaption>
+            </figure>
         </main>
 
         <!--Local Navi-->
@@ -414,7 +502,7 @@
       </div>
     </div>
   </footer>
-  <script src="download.js"></script>
+  <script src="js/download.js"></script>
 </body>
 
 </html>
